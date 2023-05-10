@@ -32,21 +32,22 @@ function Card() {
     }
     
     return (
-      <>
+      <div>
         <div>
           <input type="text" placeholder="Buscar pelicula" onChange={handleInputChange} />
         </div>
+        <div id='div1'>
         {filteredPelis.map((peli) => (
-          <div key={peli.id}>
+          
             <Link to={`/peliculas/${peli.id}`} key={peli.id} data={peli}>
-            <h1>{peli.title}</h1>
-            <img src={"https://image.tmdb.org/t/p/w600_and_h900_bestv2" + peli.poster_path} alt="" />
+            <h3>{peli.title}</h3>
+            <img src={"https://image.tmdb.org/t/p/w300" + peli.poster_path} alt="" />
             </Link>
-          </div>
+         
         ))}
-      </>
+         </div>
+      </div>
     );
-  
 };
 
 export default Card
