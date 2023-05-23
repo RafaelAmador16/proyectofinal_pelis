@@ -15,11 +15,6 @@ function InfoPelicula() {
         console.log(error);
       });
   }, []);
-
-  if (!pelicula) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <div>
       <p>Información de la película</p>
