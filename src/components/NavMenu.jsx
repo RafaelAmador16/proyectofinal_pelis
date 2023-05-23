@@ -9,6 +9,8 @@ function NavMenu() {
         </div>
         <div>
             <NavLink to="/peliculas">Peliculas</NavLink>
+            
+            <NavLink to="/login">Login</NavLink>
         </div>
     </>
   )

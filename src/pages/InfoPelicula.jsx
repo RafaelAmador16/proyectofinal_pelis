@@ -4,7 +4,7 @@ import getDatosPeli from "../helper/getDatosPeli";
 import { Link, useParams } from 'react-router-dom';
 
 function InfoPelicula() {
-  const [pelicula, setPelicula] = useState(null);
+  const [pelicula, setPelicula] = useState([]);
   const { id } = useParams();
   useEffect(() => {
     getDatosPeli(id)

@@ -3,7 +3,7 @@ const getPelis = async () =>{
     try {
         const response = await fetch(url);
         const datos = await response.json();
-        console.log(datos)
+
         return datos.results;
       } catch (error) {
         console.log(error);
