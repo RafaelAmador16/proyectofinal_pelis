@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 function Peliculas() {
   const navigate = useNavigate();
-  const isLoggedIn = localStorage.getItem('usuario') && localStorage.getItem('contraseña');
+  const isLoggedIn = localStorage.getItem('usuario') && localStorage.getItem('password');
 
   useEffect(() => {
     if (!isLoggedIn) {
